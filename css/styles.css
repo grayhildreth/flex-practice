@@ -11,22 +11,22 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: helvetica, arial ,sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .nav1 ul, .nav2 ul {
-  padding-left: 0;
   display: flex;
 }
 
 ul {
+  padding-left: 0;
   list-style-type: none;
 }
 
 .nav1 {
   height: 4em;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: .1em solid lightgrey;
   justify-content: space-between;
   align-items: center;
   padding: 0 3em;
@@ -52,6 +52,17 @@ li {
   height: 3em;
   width: auto;
 }
+.search {
+  display: flex;
+}
+
+.search img {
+  height: .8em;
+}
+
+.search li:first-of-type {
+  padding-right: 0;
+}
 
 .main-area {
   height: 40em;
@@ -67,15 +78,51 @@ li {
 
 .main-info {
   text-align: right;
-  margin-right: 5em;
+  margin-right: 3em;
 }
 
+.main-info p:first-of-type {
+  font-size: 5em;
+  margin: 0;
+}
+
+.main-info p:last-of-type {
+  margin-bottom: 2em;
+}
 
 .second-area {
   display: flex;
   color: #ffffff;
   background-color: #191919;
   justify-content: space-between;
+  padding:2em 3em;
+}
+
+button {
+  border-style: none;
+  background: white;
+  color: black;
+  border-radius: 6px;
+}
+
+.submit {
+  padding: 1em 5em;
+}
+
+.learn {
+  padding: 1em 3em;
+}
+
+.second-area-lists {
+  display: flex;
+}
+
+.second-area-lists ul:first-of-type {
+  padding-left: 0;
+}
+
+.second-area-lists li {
+  line-height: 2em;
 }
 
 .social {
@@ -96,6 +143,7 @@ li {
   border-top: 1px solid white;
   color: #ffffff;
   background-color: #191919;
+  padding: 0 3em;
 }
 
 .footer ul {
