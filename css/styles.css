@@ -105,6 +105,12 @@ button {
   border-radius: 6px;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
 .submit {
   padding: 1em 5em;
 }
